@@ -1,0 +1,14 @@
+<table border="2px">
+  <tr>
+    <th>Name</th>
+    <th>Batch</th>
+    <th>Action</th>
+  </tr>
+  <%allData.map(element =>{ %>
+  <tr>
+    <td><%= element.name%></td>
+    <td><%= element.batch%></td>
+    <td><a href="edit/<%= element._id%>">Edit</a></td>
+  </tr>
+  <% } )%>
+</table>

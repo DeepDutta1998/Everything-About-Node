@@ -1,0 +1,18 @@
+<form action="/insert" method="post">
+  <input type="text" name="name" id="name" /><br />
+  <select name="batch" id="batch">
+    <option disabled selected>Please Choose Batch</option>
+    <option value="MERN">MERN</option>
+    <option value="MEAN">MEAN</option>
+    <option value="MEVN">MEVN</option></select
+  ><br />
+  <select name="class">
+    <option disabled selected>Please Choose Class</option>
+    <% for(let i=1; i<=12; i++) {%>
+    <option value="<%= i %>"><%= i %></option>
+    <% } %></select
+  ><br />
+  <input type="submit" name="Submit" />
+</form>
+
+<a href="/listing">List</a>
